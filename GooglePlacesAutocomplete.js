@@ -458,10 +458,10 @@ export default class GooglePlacesAutocomplete extends Component {
 
   _request = (text) => {
     this._abortRequests();
+    console.log(text);
     if (text.length >= this.props.minLength) {
       const request = new XMLHttpRequest();
       this._requests.push(request);
-                console.log(request);
       request.timeout = this.props.timeout;
       request.ontimeout = this.props.onTimeout;
       request.onreadystatechange = () => {
