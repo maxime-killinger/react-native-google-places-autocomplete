@@ -808,7 +808,6 @@ GooglePlacesAutocomplete.defaultProps = {
   timeout: 20000,
   onTimeout: () => console.warn('google places autocomplete: request timeout'),
   query: {
-    key: 'missing api key',
     language: 'en',
     types: 'geocode',
   },
